@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Alan Milcewicz 15.03.25-->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+           ;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #333;
+            color: white;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Cechy modyfikowania formatowania w HTML oraz CSS</h2>
+    <table>
+        <tr>
+            <th>Cecha</th>
+            <th>HTML</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>Sposób stylizacji</td>
+            <td>Bezpośrednio w znacznikach (&lt;b&gt;, &lt;font&gt; itd.)</td>
+            <td>Wydzielone reguły (<code>color: red;</code>)</td>
+        </tr>
+        <tr>
+            <td>Separacja treści i stylu</td>
+            <td>Styl mieszany z treścią</td>
+            <td>Oddzielenie stylu od struktury</td>
+        </tr>
+        <tr>
+            <td>Elastyczność</td>
+            <td>Ograniczona, każdą zmianę trzeba powtarzać</td>
+            <td>Można stosować style globalnie dla wielu elementów</td>
+        </tr>
+        <tr>
+            <td>Zaawansowane efekty</td>
+            <td>Ograniczone</td>
+            <td>Animacje, gradienty, cienie</td>
+        </tr>
+        <tr>
+            <td>Łatwość utrzymania</td>
+            <td>Trudne przy dużych stronach</td>
+            <td>Łatwiejsze zarządzanie stylem</td>
+        </tr>
+        <tr>
+            <td>Możliwość nadpisywania</td>
+            <td>Brak mechanizmu kaskadowego</td>
+            <td>Kaskadowość i dziedziczenie</td>
+        </tr>
+    </table>
+
+    <h2>Nowe możliwości CSS w porównaniu z HTML</h2>
+    <ul>
+        <li>Kolory i tła – gradienty, przezroczystość, obrazy tła.</li>
+        <li>Układ strony – Flexbox i Grid Layout.</li>
+        <li>Animacje i przejścia – @keyframes,transition.</li>
+        <li>Pseudo-klasy i pseudo-elementy – :hover, :after.</li>
+        <li>Responsywność – Media queries.</li>
+        <li>Efekty cieni i filtrów – box-shadow,filter: blur().</li>
+        <li>Lepsza kontrola nad czcionkami – @font-face.</li>
+    </ul>
+
+    <h2>Wady CSS</h2>
+    <ul>
+        <li>Brak pełnej kompatybilności między przeglądarkami.</li>
+        <li>Złożoność kaskadowości – nadpisywanie stylów.</li>
+        <li>Brak pełnej kontroli nad wydrukiem.</li>
+        <li>Zależność od silnika przeglądarki.</li>
+        <li>Starsze wersje nie obsługują zmiennych CSS.</li>
+    </ul>
+
+</body>
+</html>

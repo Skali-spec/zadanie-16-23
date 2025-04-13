@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Alan Milcewicz 15.03.25-->
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formatowanie w HTML i CSS</title>
+		<style>
+			textarea{background-color: #f4f4f4;}
+			body
+			{ 
+				font-family: Arial, sans-serif;
+			}
+			
+			ul, ol 
+			{
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+
+
+		<h1><u>Wewnętrzny arkusz stylów</u> </h1>
+		<ol>
+		<h1><li>gdzie jest wstawiany,  </h1><font face = "arial">  Wstawiany jest zawsze w części nagłówkowej dokumentu                    
+		</font></li>
+
+		<h1><li>składnia teoretyczna (w ramce, konieczne wcięcia), 
+		</h1><font face = "arial"><textarea cols="40" rows="15" readonly> 
+<head> 
+	(...) 
+	<style type="text/css"> 
+	/* <![CDATA[ */ 
+	selektor1 { cecha: wartość; cecha2: wartość2... } 
+	selektor2 { cecha: wartość; cecha2: wartość2... } 
+	(...) 
+	/* ]]> */ 
+	</style> 
+	(...) 
+</head> </textarea>
+		</font></li>
+		<h1> <li>jakie mogą być selektory, </h1><font face = "arial">Selektory tagów, identyfikatorów, pseudo-klas, atrybutów  </font></li>
+		<h1><li>jakie mogą być cechy i wartości. </h1><font face = "arial"> Kolory, rozmiar czcionki, rodzaj czcionki, margines, obramowanie </font></li>
+		</ol>
+   
+
+</body>
+</html>

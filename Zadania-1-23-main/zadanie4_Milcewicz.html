@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Alan Milcewicz 15.03.25-->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania CSS do strony WWW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: #fff;
+        }
+        th, td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background: #444;
+            color: white;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            font-family: monospace;
+            background: #f4f4f4;
+            border: 1px solid #999;
+            padding: 5px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><b>Sposoby podłączania CSS do strony WWW</b></h2>
+
+    <table>
+        
+            <tr><b>1. <u>Styl wewnętrzny</u></b></tr>
+        
+        <tr>
+            <td>
+                Styl zapisujemy w sekcji head> w znaczniku style>.
+                <br><br>
+                Przykład kodu:
+                <textarea readonly>
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <b>2. <u>Styl zewnętrzny</b></u>
+        </tr>
+        <tr>
+            <td>
+                Tworzymy osobny plik *.css, a następnie łączymy go w sekcji head> poprzez link>.
+                <br><br>
+                Przykład kodu:
+                <textarea readonly>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+                </textarea>
+                Przykład zawartości pliku .css:
+                <textarea readonly>
+p {
+    color: red;
+    font-size: 18px;
+}
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <b>3. <u>Styl liniowy</b></u>
+        </tr>
+        <tr>
+            <td>
+                Styl umieszczamy bezpośrednio w znaczniku HTML w atrybucie style.
+                <br><br>
+                Przykład kodu:
+                <textarea readonly>
+<p style="color: green; font-weight: bold;">
+    Tekst z zastosowanym stylem liniowym.
+</p>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <b>4. <u>Styl importowany</b></u> 
+        </tr>
+        <tr>
+            <td>
+                Importujemy plik .css w innym arkuszu CSS lub w sekcji style> w HTML.
+                <br><br>
+                Przykład kodu:
+                <textarea readonly>
+<style>
+    @import url("style.css");
+</style>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <b>5. <u>Styl Alternatywny</b></u>
+        </tr>
+        <tr>
+            <td>
+                pozwala udostępnić użytkownikowi kilka wersji wyglądu strony do wyboru za pomocą linków.
+                <br><br>
+                Przykład kodu:
+                <textarea readonly>
+<head> 
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /> 
+<link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /> 
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /> 
+</head> 
+                </textarea>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

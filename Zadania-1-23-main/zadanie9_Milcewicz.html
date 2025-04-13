@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Alan Milcewicz 15.03.25-->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opis stylu zewnętrznego. </title>
+    <style>
+	textarea{background-color: #f4f4f4;}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border: 2px solid #333;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        td {
+            padding: 20px;
+            text-align: left;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+	
+    </style>
+</head>
+<body>
+<ol>
+	
+    <h1><li>Składnia teoretyczna CSS</h1>
+
+    <table>
+        <tr>
+            <td>
+                <strong>Przykład składni CSS:</strong>
+                <pre>
+&lt;style&gt;
+
+    body {
+        background-color: #f0f0f0; 
+        font-family: Arial, sans-serif;
+    }
+    p {
+        color: blue; 
+        font-size: 16px; 
+    }
+    h1 {
+        color: green; 
+        text-align: center;
+    }
+&lt;/style&gt;
+                </pre>
+            </td>
+        </tr>
+    </table>
+</li>
+<h1><li>Gdzie wstawiany jest  styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS? </h1><font face = "arial">
+ Styl zewnętrzny jest wstawiany w &lt;head&gt; i może występować wielokrotnie.</font></li>
+
+ <h1><li>Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może 
+być tabela jedno komórkowa? </h1><font face = "arial"><textarea cols="65" readonly>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+    </textarea></font></li>
+
+ <h1><li>Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad 
+musi być zachowana przy większej ilości dołączanych styli? </h1><font face = "arial">Dowolną ilość, trzeba dodać element link rel="Stylesheet" /> przed każdym arkuszem</font></li>
+
+ <h1><li>Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza. </h1><font face = "arial">W przypadku konfliktów, gdy te same style są definiowane w różnych arkuszach stylów podłączonych do tego samego dokumentu HTML,
+ stosowane są zasady kaskadowości</font></li>
+
+ <h1><li>Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego? </h1><font face = "arial">Pliki są tworzone, zostaje wpisana odpowiednia składnia, a następnie zostaje jest dodawane roższerzenie .css podczas zapisu</font></li>
+
+<h1><li> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1><font face = "arial"> Program jest uruchamiany, dzięki wielu narzędzią tworzenie pliku jest o wiele łatwiejsze, często także programy oferują podgląd na żywo, a następnie plik jest automatycznie zapisywany z roższerzeniem .css</font></li>
+
+
+<h1><li> Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli? </h1><font face = "arial">Plik zewnętrznego arkusza styli posiada rozszerzenie .css</font></li>
+
+<h1><li> Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?  </h1><font face = "arial"><ol><li>wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy</li>  
+<li>jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
+konieczności zmiany każdej strony osobno</li>
+</font></li></ol>
+<h1><li> Uwagi na temat pisania w CSS.   </h1><font face = "arial"><ol><li>LINK tylko w head.</li>
+<li>Można dołączyć dowolną liczbę arkuszy.</li>
+<li>W przypadku konfliktów ważniejsze będą późniejsze deklaracje.</li></font></li></ol>
+ 
+ 
+</body>
+</html>

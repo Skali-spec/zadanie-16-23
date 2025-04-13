@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- ALAN MILCEWICZ 15.03.2025 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Określanie koloru w CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .hex { color: #FFFFFF; background-color: #000000; }
+        .rgb { color: rgb(255,100,13); background-color: #000000; }
+        .name { color: red; background-color: #000000; }
+        .rgb-percent {color: rgb(10%,40%,78%); background-color: #000000;  }
+    </style>
+</head>
+<body>
+
+    <h2>Sposoby Definiowania Kolorów</h2>
+
+    <table>
+        <tr>
+            <th>Metoda</th>
+            <th>Przykład kodu</th>
+            
+        </tr>
+        <tr>
+            <td>Heksadecymalna</td>
+            <td><code>color: #FFFFFF;</code></td>
+            
+        </tr>
+        <tr>
+            <td>RGB</td>
+            <td><code>color: rgb(255,100,13);</code></td>
+           
+        </tr>
+        <tr>
+            <td>Nazwa koloru</td>
+            <td><code>color: red;</code></td>
+           
+        </tr>
+        <tr>
+            <td>RGB z procentowym nasyceniem</td>
+            <td><code>color: rgb(10%,40%,78%);</code></td>
+           
+        </tr>
+    </table>
+
+</body>
+</html>
